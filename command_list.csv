@@ -1,0 +1,71 @@
+    1  man ls
+    2  ls
+    3  clear
+    4  ls
+    5  cd desktop
+    6  ls
+    7  cs ..
+    8  ls
+    9  cd ..
+   10  ls
+   11  cd ~
+   12  ls
+   13  cd desktop
+   14  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   15  echo >> /Users/oksana/.zprofile
+   16  echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/oksana/.zprofile
+   17  eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+   18  brew help
+   19  brew install --cask iterm2
+   20  cd Folder1
+   21  ls
+   22  cd desktop
+   23  ls
+   24  cd Folder1
+   25  history -c && rm ~/.bash_history
+   26  git --version
+   27  history -c && rm ~/.bash_history
+   28  git config --global user.name Molchanova Oksana
+   29  git config --global user.email oksana.molchanova18@gmail.com
+   30  git config --list\n
+   31  git clone https://github.com/oksanamolchanova18-byte/HW_10.git
+   32  cd HW_10
+   33  touch text_ignore.txt
+   34  nano .gitignore
+   35  git status
+   36  git add
+   37  git add .
+   38  git status
+   39  git commit
+   40  git status
+   41  git commit -m "Update .gitignore to ignore text_ignore.txt"\n
+   42  git status
+   43  cd ~/projects/HW_10
+   44  touch mait_test.txt
+   45  ls
+   46  git add .
+   47  git status
+   48  git restore --staged mait_test.txt
+   49  mv mait_test.txt main_test.txt
+   50  git add .
+   51  git status
+   52  git commit -m "Add main_test.txt"
+   53  git status
+   54  cd HW_10
+   55  git checkout -b develop
+   56  git status
+   57  touch develop_test.txt
+   58  git add .
+   59  git status
+   60  git commit -m "Add empty develop_test.txt"
+   61  git status
+   62  nano develop_test.txt
+   63  git status
+   64  git add .
+   65  git status
+   66  git commit -m "Update develop_test.txt with a small change"
+   67  git status
+   68  git checkout main
+   69  git status
+   70  git merge develop
+   71  git log --oneline --graph
